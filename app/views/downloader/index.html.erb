@@ -1,4 +1,5 @@
 <%= form_tag('downloader/add_download', method: :post) do -%>
   <%= text_field_tag :url %>
+  <%= text_field_tag :segments_size, nil, type: :number %>
   <div><%= submit_tag 'Save' %></div>
 <% end -%>
